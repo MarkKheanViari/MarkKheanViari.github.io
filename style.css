@@ -5,6 +5,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --primary-color: #0092C0;
+    --secondary-color: #f9a825;
+    --dark-color: #333;
+    --light-color: #fff;
+    --background-color: #152C4C;
+}
+
 body, html {
     margin: 0;
     padding: 0;
