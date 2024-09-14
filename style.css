@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +7,13 @@
 }
 
 :root {
-    --primary-color: #0092C0;
-    --secondary-color: #f9a825;
-    --dark-color: #333;
-    --light-color: #fff;
-    --background-color: #152C4C;
+    --primary-color: #1E90FF; /* Dodger Blue */
+    --secondary-color: #87CEFA; /* Light Sky Blue */
+    --dark-color: #0D1B2A; /* Dark Navy */
+    --light-color: #FFFFFF; /* White */
+    --background-color: #E6F0FA; /* Light Blue Background */
 }
+
 
 body, html {
     margin: 0;
@@ -255,8 +257,7 @@ nav ul li a {
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    background: #0A1B35;  /* Dark background for the entire section */
-    border-radius: 15px;  /* Rounded corners */
+    background: #FFFFFF;  /* Dark background for the entire section */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);  /* Subtle shadow for depth */
 }
 
@@ -264,6 +265,7 @@ nav ul li a {
     color: #f9a825;
     margin-bottom: 40px;
     font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .projects-grid {
@@ -273,12 +275,12 @@ nav ul li a {
 }
 
 .project-card {
-    background: #152C4C;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .project-card:hover {
@@ -312,13 +314,14 @@ nav ul li a {
     color: #f9a825;
     margin-bottom: 10px;
     font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .project-content p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #d1d1d1;
+    color: black;
 }
 
 .project-btn {
@@ -348,9 +351,7 @@ nav ul li a {
     max-width: 1700px;
     margin: 80px auto;
     background: linear-gradient(135deg, #0A1B35, #152C4C); /* Gradient Background */
-    border: 10px solid transparent;
     border-image: url('border.jpg') 30 stretch;
-    border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
     position: relative;
 }
@@ -471,8 +472,7 @@ nav ul li a {
     max-width: 1700px;
     margin: 40px auto; /* Added top and bottom margin */
     text-align: center;
-    background: #0A1B35;  /* Dark background */
-    border-radius: 10px; /* Slight border radius for overall section */
+    background: rgba(0, 0, 0, 0.5);  /* Dark background */
     color: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
@@ -481,6 +481,7 @@ nav ul li a {
     color: #f9a825;
     margin-bottom: 40px;
     font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .skills-container {
@@ -490,7 +491,7 @@ nav ul li a {
 }
 
 .skill-card {
-    background: #152C4C;
+    background: #fff;
     padding: 20px;
     border-radius: 8px; /* Smaller radius to make it more rectangular */
     text-align: center;
@@ -549,7 +550,8 @@ nav ul li a {
 .skill-card h3 {
     margin-bottom: 15px;
     font-size: 1.5rem;
-    color: #f9a825;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -560,7 +562,7 @@ nav ul li a {
 }
 
 .project-card {
-    background: #3a403b;
+    background: #FFFFFF;
     padding: 20px;
     margin: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -569,6 +571,87 @@ nav ul li a {
 .project-card h3 {
     margin-bottom: 10px;
 }
+
+#contact {
+    padding: 60px 20px; /* Added padding for better spacing */
+    text-align: center;
+    background-color: #f4f4f4; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333; /* Dark color for better contrast */
+    font-weight: 700; /* Bold heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px; /* Increased width for larger screens */
+    margin: 0 auto;
+    background-color: #fff; /* White background for the form */
+    padding: 40px;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow effect */
+}
+
+label {
+    font-size: 1.1em; /* Slightly larger font size */
+    margin-bottom: 8px;
+    text-align: left;
+    color: #333; /* Dark color for labels */
+}
+
+input, textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Slightly larger border-radius */
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em; /* Consistent font size */
+}
+
+input:focus, textarea:focus {
+    border-color: #1E90FF; /* Highlight border on focus */
+    outline: none;
+}
+
+button {
+    background: linear-gradient(45deg, #1E90FF, #00BFFF); /* Gradient background */
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 30px; /* Large border-radius for a rounded button */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #00BFFF, #1E90FF); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 15px;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #87CEFA; /* Secondary color hover effect */
+}
+
+  
 
 footer {
     text-align: center;
